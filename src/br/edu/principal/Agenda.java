@@ -5,7 +5,11 @@ import java.util.Scanner;
 
 public class Agenda {
 	
-	public static void adicionar(Scanner sc, List<String> nomes, List<String> celulares, List<String> emails) {
+	public static void adicionar(
+			Scanner sc, 
+			List<String> nomes, 
+			List<String> celulares, 
+			List<String> emails) {
     	System.out.println("=== ADICIONAR CONTATO ===");
         System.out.print("Digite o nome: ");
         String nome = sc.nextLine();
@@ -20,8 +24,8 @@ public class Agenda {
 
         System.out.println("Contato adicionado com sucesso!");
     }
-
-    public static void listar(
+	
+	public static void listar(
             List<String> nomes,
             List<String> celulares,
             List<String> emails) {
@@ -129,5 +133,5 @@ public class Agenda {
             System.out.println("Contato não encontrado!");
         }
     }
-
+    
 }
